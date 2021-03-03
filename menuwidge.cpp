@@ -48,3 +48,14 @@ void MenuWidge::on_ModifyButton_clicked()
        this->show();
         });
 }
+
+void MenuWidge::on_pushButton_clicked()
+{
+    DeleteGarbage * DeleteGarbagePage = new DeleteGarbage();//在主窗口中实例化子窗口
+    this->hide();//this代表主窗口
+    DeleteGarbagePage->show();//显示子窗口
+    connect(DeleteGarbagePage,&DeleteGarbage::DeleteGarbageBack,this,[=](){
+       this->show();
+        });
+}
+

@@ -1,13 +1,13 @@
 FORMS += \
     addgarbage.ui \
-    browser.ui \
+    deletegarbage.ui \
     menuwidge.ui \
     modify.ui \
     query.ui
 
 HEADERS += \
     addgarbage.h \
-    browser.h \
+    deletegarbage.h \
     garbageinfo.h \
     menuwidge.h \
     modify.h \
@@ -15,7 +15,7 @@ HEADERS += \
 
 SOURCES += \
     addgarbage.cpp \
-    browser.cpp \
+    deletegarbage.cpp \
     garbageinfo.cpp \
     main.cpp \
     menuwidge.cpp \
@@ -27,6 +27,7 @@ QT += widgets
 DISTFILES += \
     garbage
 
-RESOURCES +=
+RESOURCES += \
+    image.qrc
 
 RC_FILE = logo.rc

@@ -9,18 +9,18 @@ int main(int argc, char *argv[])
     QApplication a(argc, argv);
     // 窗口对象，父类为QWidget
     //加载qss文件
-    QFile qssFile("C:/Users/sunxin/Documents/garbage-query/style.qss");
-    qssFile.open(QFile::ReadOnly); //以只读方式打开
-    if(qssFile.isOpen())
-    {
-        QString qss = QLatin1String(qssFile.readAll());
-        qApp->setStyleSheet(qss);
-        qssFile.close();
-    }
-    else
-    {
-        qDebug() << "无法打开文件";
-    }
+//    QFile qssFile("C:/Users/sunxin/Documents/garbage-query/Ubuntu.qss");
+//    qssFile.open(QFile::ReadOnly); //以只读方式打开
+//    if(qssFile.isOpen())
+//    {
+//        QString qss = QLatin1String(qssFile.readAll());
+//        qApp->setStyleSheet(qss);
+//        qssFile.close();
+//    }
+//    else
+//    {
+//        qDebug() << "无法打开文件";
+//    }
 
 
     MenuWidge w;

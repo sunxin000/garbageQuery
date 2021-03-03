@@ -13,7 +13,7 @@
   <property name="windowTitle">
    <string>垃圾分类查询系统</string>
   </property>
-  <widget class="QToolButton" name="QueryButton">
+  <widget class="QPushButton" name="QueryButton">
    <property name="geometry">
     <rect>
      <x>310</x>
@@ -26,11 +26,8 @@
     <string>查询垃圾类别</string>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>F:/desktop/垃圾分类查询.png</normaloff>F:/desktop/垃圾分类查询.png</iconset>
-   </property>
-   <property name="toolButtonStyle">
-    <enum>Qt::ToolButtonTextBesideIcon</enum>
+    <iconset resource="image.qrc">
+     <normaloff>:/image/cquery.png</normaloff>:/image/cquery.png</iconset>
    </property>
   </widget>
   <widget class="QLabel" name="label">
@@ -80,7 +77,7 @@
     <string>退出系统</string>
    </property>
   </widget>
-  <widget class="QToolButton" name="BrowserButton">
+  <widget class="QPushButton" name="AddButton">
    <property name="geometry">
     <rect>
      <x>310</x>
@@ -89,18 +86,18 @@
      <height>41</height>
     </rect>
    </property>
+   <property name="layoutDirection">
+    <enum>Qt::LeftToRight</enum>
+   </property>
    <property name="text">
-    <string>浏览垃圾目录</string>
+    <string>添加垃圾条目</string>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>F:/desktop/浏览..png</normaloff>F:/desktop/浏览..png</iconset>
-   </property>
-   <property name="toolButtonStyle">
-    <enum>Qt::ToolButtonTextBesideIcon</enum>
+    <iconset resource="image.qrc">
+     <normaloff>:/image/add.png</normaloff>:/image/add.png</iconset>
    </property>
   </widget>
-  <widget class="QToolButton" name="AddButton">
+  <widget class="QPushButton" name="ModifyButton">
    <property name="geometry">
     <rect>
      <x>310</x>
@@ -109,21 +106,15 @@
      <height>41</height>
     </rect>
    </property>
-   <property name="layoutDirection">
-    <enum>Qt::LeftToRight</enum>
-   </property>
    <property name="text">
-    <string>添加垃圾</string>
+    <string>修改垃圾类别</string>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>F:/desktop/增加 添加 加减.png</normaloff>F:/desktop/增加 添加 加减.png</iconset>
-   </property>
-   <property name="toolButtonStyle">
-    <enum>Qt::ToolButtonTextBesideIcon</enum>
+    <iconset resource="image.qrc">
+     <normaloff>:/image/modify.png</normaloff>:/image/modify.png</iconset>
    </property>
   </widget>
-  <widget class="QToolButton" name="ModifyButton">
+  <widget class="QPushButton" name="pushButton">
    <property name="geometry">
     <rect>
      <x>310</x>
@@ -133,18 +124,36 @@
     </rect>
    </property>
    <property name="text">
-    <string>修改垃圾类别</string>
+    <string>删除垃圾条目</string>
    </property>
    <property name="icon">
-    <iconset>
-     <normaloff>F:/desktop/modify.png</normaloff>F:/desktop/modify.png</iconset>
+    <iconset resource="image.qrc">
+     <normaloff>:/image/delete.png</normaloff>:/image/delete.png</iconset>
    </property>
-   <property name="toolButtonStyle">
-    <enum>Qt::ToolButtonTextBesideIcon</enum>
+  </widget>
+  <widget class="QLabel" name="label_2">
+   <property name="geometry">
+    <rect>
+     <x>180</x>
+     <y>50</y>
+     <width>61</width>
+     <height>51</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap resource="image.qrc">:/image/favicon.png</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
    </property>
   </widget>
  </widget>
- <resources/>
+ <resources>
+  <include location="image.qrc"/>
+ </resources>
  <connections>
   <connection>
    <sender>ExitButton</sender>

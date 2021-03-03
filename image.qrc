@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/delete.png</file>
+        <file>image/add.png</file>
+        <file>image/browse.png</file>
+        <file>image/cquery.png</file>
+        <file>image/modify.png</file>
+        <file>image/query.png</file>
+        <file>image/delete (2).png</file>
+        <file>image/favicon.png</file>
+    </qresource>
+</RCC>
